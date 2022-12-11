@@ -18,7 +18,7 @@ function hexStringToRGB(hexString) {
     hexString.slice(5),
   ];
 
-  values = values.map((value, i) => {
+  values = values.map((value) => {
     return useChart(value[0]) * 16 + useChart(value[1]);
   });
 
