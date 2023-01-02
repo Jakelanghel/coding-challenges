@@ -1,3 +1,5 @@
+--FINISHED
+
 Write a function that takes a string of parentheses, 
 and determines if the order of the parentheses is valid.
 

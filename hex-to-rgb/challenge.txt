@@ -1,3 +1,5 @@
+--FINISHED
+
 When working with color values it can sometimes be useful to extract
 the individual red, green, and blue (RGB) component values for a color.
 
@@ -13,3 +15,4 @@ of hexadecimal notation (ie "#FFF")
 Example:
 
 "#FF9933" --> {r: 255, g: 153, b: 51}
+

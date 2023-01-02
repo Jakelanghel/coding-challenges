@@ -1,3 +1,5 @@
+--FINISHED
+
 Snail Sort
 
 Given an n x n array, 
