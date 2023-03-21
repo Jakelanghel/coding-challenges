@@ -44,11 +44,6 @@ snail = function (tst) {
   const mid = tst.slice(1, tst.length - 1).map((r) => r.slice(1, r.length - 1))
     ? tst.slice(1, tst.length - 1).map((r) => r.slice(1, r.length - 1))
     : [];
-  // console.log(top);
-  // console.log(back);
-  // console.log(bottom);
-  // console.log(front);
-  // console.log(mid);
 
   top.length > 0 ? res.push(tst[0]) : null;
   back.length > 0 ? res.push(back) : null;
