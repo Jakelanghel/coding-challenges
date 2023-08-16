@@ -1,8 +1,7 @@
 const validISBN10 = (isbn) => {
   isbn = Array.from(isbn);
   let results = 0;
-  const front9 = isbn.slice(0, -2);
-  const check1 = front9.every((num) => num !== "X");
+  const check1 = isbn.slice(0, -2).every((num) => num !== "X");
   if (!check1 || isbn.length !== 10) {
     return false;
   }
