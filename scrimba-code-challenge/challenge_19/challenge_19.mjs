@@ -33,12 +33,18 @@ Example description: "Coding Corner is a 55 minute education podcast hosted by T
 */
 
 function createDescriptionsFor(data) {
-  const descriptions = data.map(
-    (pod) =>
-      `${pod.title} is a ${pod.duration} min ${
-        pod.genre
-      } podcast hosted by ${pod.hosts.map((host) => host).join(", ")}`
-  );
+  return data.map((podcast) => {
+    const { hosts, title, duration, genre } = podcast;
+    const lastIndex = hosts.length - 1;
+    hosts[lastIndex] = `and ${hosts[lastIndex]}`;
+
+    return {
+      ...podcast,
+      description: `${title} is a ${duration} min ${genre} podcast hosted by ${hosts
+        .map((host) => host)
+        .join(", ")}.`,
+    };
+  });
 }
 
 console.log(createDescriptionsFor(podcasts));
