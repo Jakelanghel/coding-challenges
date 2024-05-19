@@ -1,4 +1,4 @@
-## Remove First and Last Character
+# Remove First and Last Character
 
 Challenge from [Code wars](https://www.codewars.com)
 
