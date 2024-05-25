@@ -1,26 +1,42 @@
-tst1 = [4,6,2,1,9,63,-134,566]
-tst2 = [-52, 56, 30, 29, -54, 0, -110]
-tst3 = [42, 54, 65, 87, 0]  
-tst4 = [5] 
+tst1 = "1 2 3 4 5"
+tst2 = "1 2 -3 4 5"
+tst3 = "1 9 3 4 -5" 
 
-tsts = [[4,6,2,1,9,63,-134,566], [-52, 56, 30, 29, -54, 0, -110], [42, 54, 65, 87, 0], [5]  ]
+tsts = [tst1, tst2, tst3]
 
-
-
-# def minimum(arr):
-#     arr.sort()
-#     return arr[0]
+def high_and_low(numbers):
+    # Split the input string into a list of number strings
+    number_list = numbers.split()
     
+    # Convert the list of number strings to a list of integers
+    number_list = [int(num) for num in number_list]
+    
+    # Find the maximum and minimum values in the list
+    max_num = max(number_list)
+    min_num = min(number_list)
+    
+    # Return the result as a formatted string
+    return f"{max_num} {min_num}"
 
-# def maximum(arr):
-#     arr.sort()
-#     return arr[-1]  
-
-# for arr in tsts:
-#     # print(minimum(arr))
-#     print(maximum(arr))
+print(high_and_low("8 3 -5555 42 -1 0 0 -9 4 7 4 -4"))
 
 
-minimum, maximum = min, max
+            
+            
+            
+    # x = int("-5")
+    # print(x)
+
+
+ 
+        
+    # return max(arr) + " " + min(arr)
+
+
+
+# for num in tsts: 
+#     print(min_max(num))
+
+
 
 
