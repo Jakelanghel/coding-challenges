@@ -3,6 +3,8 @@ tst2 = "identifier"
 tst3 = ""
 
 def break_camel(text):
+    if not text:
+        return ""
     lastCap = 0
     words = []
     for i, char in enumerate(text):
