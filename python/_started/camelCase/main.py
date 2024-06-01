@@ -2,9 +2,8 @@ tst = "The_Stealth-Warrior"
 
 
 def to_camel_case(text):
-    stripped = text.strip()
-    if stripped == "":
-        return text
+    if not text:
+        return ""
     # Split the text on '-' or '_'
     words = text.replace("-", " ").replace("_", " ").split()
     
