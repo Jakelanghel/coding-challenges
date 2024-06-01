@@ -1,11 +1,10 @@
 def solution(number):
-    arr = list(range(1, number))
-    multiples = [x if x % 3 == 0 else None for x in range(1, number) ]
-    print(multiples)
-    pass
+    if number < 0:
+        return 0
+    return sum(x for x in range(number) if x % 3 == 0 or x % 5 == 0)
     
 
   
         
 
-solution(10)
+print(solution(10))
