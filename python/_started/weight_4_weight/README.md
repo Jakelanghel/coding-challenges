@@ -1,20 +1,16 @@
-# Weight for weight
+# Find the missing letter
 
 Challenge from [Code wars](https://www.codewars.com)
 
-My friend John and I are members of the "Fat to Fit Club (FFC)". John is worried because each month a list with the weights of members is published and each month he is the last on the list which means he is the heaviest.
+Write a method that takes an array of consecutive (increasing) letters as input and that returns the missing letter in the array.
 
-I am the one who establishes the list so I told him: "Don't worry any more, I will modify the order of the list". It was decided to attribute a "weight" to numbers. The weight of a number will be from now on the sum of its digits.
-
-For example 99 will have "weight" 18, 100 will have "weight" 1 so in the list 100 will come before 99.
-
-Given a string with the weights of FFC members in normal order can you give this string ordered by "weights" of these numbers?
+You will always get an valid array. And it will be always exactly one letter be missing. The length of the array will always be at least 2.
+The array will always contain letters in only one case.
 
 ## Example:
 
 ```
-"56 65 74 100 99 68 86 180 90" ordered by numbers weights becomes:
-
-"100 180 90 56 65 74 68 86 99"
+['a','b','c','d','f'] -> 'e'
+['O','Q','R','S'] -> 'P'
 
 ```
