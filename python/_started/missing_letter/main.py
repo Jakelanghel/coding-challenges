@@ -1,23 +1,20 @@
-tst1 = "56 65 74 100 99 68 86 180 90"
-tst2 = "103 123 4444 99 2000"   # 2000 103 123 4444 99
-tst3 = "2000 10003 1234000 44444444 9999 11 11 22 123"   # 11 11 2000 10003 22 123 1234000 44444444 9999
+import string
 
+def find_missing_letter(chars):
+    tst_arr = [char.lower() for char in chars]
+    alphabet = list(string.ascii_lowercase)
+    start = alphabet.index(tst_arr[0])
+    end = alphabet.index(tst_arr[int(len(chars)) - 1 ])
+    correct = alphabet[start:end]
+    res = None
+    for lett in correct:
+        if lett not in tst_arr:
+            res = lett
 
-def order_weight(s):
-    arr = s.split()
-    weights = {}
-    for num in arr:
-        weight = 0
-        for i in num:
-            weight += int(i)
-       
-    print(weights)
-    sorted_weights = dict(sorted(weights.items(), key=lambda x: x[0]))
-    return " ".join(str(v) for v in sorted_weights.values())
+    if chars[0].isupper():
+        return res.upper()
+    
+    return res
 
+print(find_missing_letter(['O', 'Q', 'R', 'S']))  # SHOULD BE P NEEDS TO BE CAP AS WELL
 
-
-    # your code
-
-
-print(order_weight(tst3))
